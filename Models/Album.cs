@@ -26,6 +26,7 @@ namespace Week13.Models
         public string Title { get; set; }
 
         [Column(TypeName = "numeric")]
+        [DisplayFormat(DataFormatString = "{0:c}")]
         public decimal Price { get; set; }
 
         [StringLength(1024)]
